@@ -58,7 +58,7 @@ print(params)
 
 files = {'file': open("/tmp/a.jpeg", 'rb')}
 
-resp = requests.post("https://aweme.snssdk.com/aweme/v1/commit/user/", params=params, files=files, headers=header).json()
+resp = requests.post("https://aweme.snssdk.com/aweme/v1/upload/image/", params=params, files=files, headers=header).json()
 print(resp)
 
 avatar_uri = resp['user']['avatar_larger']['uri']
